@@ -1,0 +1,1 @@
+select distinct ?t where { ?x rdf:type :Amphora . ?x :hasFindingPlace ?y . ?y :fallsWithin ?fw . ?fw dcterms:title "Monte Testaccio" . ?x :carries ?z . ?z :isTranscribedBy ?u . ?u :hasTranscription ?t . ?z rdf:type :Stamp} limit 100

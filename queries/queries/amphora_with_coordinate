@@ -1,0 +1,1 @@
+select  ?pl_name ?t ?lon ?lat where {?x rdf:type :Amphora . ?x :hasFindingPlace ?y . ?y :fallsWithin ?fw . ?fw dcterms:title ?pl_name . ?fw :hasLongitude ?lon . ?fw :hasLatitude ?lat . ?x :carries ?z . ?z :isTranscribedBy ?u . ?u :hasTranscription ?t .  } limit 100
