@@ -1,4 +1,0 @@
-select distinct ?t ?pl where { ?x rdf:type :Amphora . ?x :hasFindingPlace ?y . ?y :fallsWithin ?fw . ?fw dcterms:title ?pl . ?x :carries ?z . ?z :isTranscribedBy ?u . ?u :hasTranscription ?t . ?z rdf:type :Stamp . ?x :hasAmphoricType ?ty . ?ty dcterms:title "Dressel 20" .
-FILTER regex(?pl, ".*\\ytestaccio\\y.*", "i") 
-}
-
